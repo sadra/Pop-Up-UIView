@@ -26,3 +26,7 @@ Now, you should make and instance of controller and handle the popUp after click
 ```swift
     popUpController.openPopUpView()
 ```
+
+## More
+- you must know, whenever you call `openPopUpView()` it detect popUp situation (like it is open or closed), so you needent to delcare and handle it, it's automated
+- you can add everything in your opUpView and use it in controller, like a UIButton I used in this example
