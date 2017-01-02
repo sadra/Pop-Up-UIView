@@ -1,6 +1,9 @@
 # Pop-Up-UIView
 This is an example to a create Pop Up UIView in with Swift language
 
+![Alt text](/art-assets/popUpUIView.gif?raw=true "popUpUIView")
+
+
 ## 1st
 Create a new view file (`.xib`), this is the PopUp View.
 
@@ -11,6 +14,9 @@ Import the `popUpViewController.swift` from this repo into your project
 Assign the popUpView to your popUpView Controller:
 - in the .xib file select the <b>File's Owner</b> (from righte side). then, in Custom Class of <I>Identity Inspector</I> tab, write popUpViewController.
 - then from Outlets in <I>Connection Inspector</I>, Connect `view` to UIView of your .xib file 
+
+![Alt text](/art-assets/popUIViewOutlet.jpg?raw=true "popUpUIViewOutlets")
+
 
 ## 4th
 Now, you should make and instance of controller and handle the popUp after click or sth
