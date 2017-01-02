@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        popUpController.crateInstanceOfPopUp(self.view, theViewController: self)
+        popUpController.crateInstanceOfPopUp(self.view, theViewController: self, sizeOfPopUpViewContainer: 200)
         
     }
 
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 
     @IBAction func openPopUpViewBtn(sender: AnyObject) {
         
-        popUpController.addPopOverView()
+        popUpController.openPopUpView()
         
     }
 

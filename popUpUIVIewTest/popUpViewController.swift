@@ -13,7 +13,10 @@ class popUpViewController: UIViewController {
     var popUpViewControllerInstance : popUpViewController! = nil
 
     var theParentView: UIView!
+    
+    var sizeOfPopUpViewContainer:Int!
 
+    var popUpViewIsOpen:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +40,7 @@ class popUpViewController: UIViewController {
         
         UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.7, options: .CurveEaseInOut, animations: { [weak self] in
             let frame = self?.view.frame
-            let yComponent = UIScreen.mainScreen().bounds.height - 280
+            let yComponent = UIScreen.mainScreen().bounds.height - CGFloat.init(self!.sizeOfPopUpViewContainer)
             self?.view.frame = CGRectMake(0, yComponent, frame!.width, frame!.height)
         }){ _ in }
         
@@ -47,26 +50,18 @@ class popUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    //Close popUpView and remove it from Parent or superView
-    @IBAction func closePopUpDialog(sender: AnyObject) {
-        
-        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .CurveEaseInOut, animations: {
-            self.popUpViewControllerInstance.view.frame = CGRectMake(0, self.theParentView.frame.height, self.theParentView.frame.width, self.theParentView.frame.height)
-        }) { _ in
-            self.popUpViewControllerInstance.view.removeFromSuperview()
-        }
-        
-    }
-    
     //Create an Instance of popUpDialog and declare the parent and child
-    func crateInstanceOfPopUp(senderView:UIView, theViewController:UIViewController){
+    func crateInstanceOfPopUp(senderView:UIView, theViewController:UIViewController, sizeOfPopUpViewContainer:Int){
         theParentView = senderView
         popUpViewControllerInstance = self
+        self.sizeOfPopUpViewContainer = sizeOfPopUpViewContainer
         theViewController.addChildViewController(popUpViewControllerInstance)
     }
     
     //Add popUP View ot parent view
     func addPopOverView() {
+        
+        popUpViewIsOpen = true
         
         popUpViewControllerInstance.view.frame.origin.y = theParentView.frame.height
         
@@ -80,7 +75,7 @@ class popUpViewController: UIViewController {
     
     //Preapre the BackGroundView of the child View
     func prepareBackgroundView(){
-        let blurEffect = UIBlurEffect.init(style: .ExtraLight)
+        let blurEffect = UIBlurEffect.init(style: .Dark)
         let visualEffect = UIVisualEffectView.init(effect: blurEffect)
         let bluredView = UIVisualEffectView.init(effect: blurEffect)
         bluredView.contentView.addSubview(visualEffect)
@@ -98,5 +93,31 @@ class popUpViewController: UIViewController {
         self.view.frame = CGRectMake(0, y + translation.y, view.frame.width, view.frame.height)
         recognizer.setTranslation(CGPointZero, inView: self.view)
     }
+    
+    func openPopUpView(){
+
+        if (self.popUpViewIsOpen) {
+            closePopUpView()
+        }else{
+            addPopOverView()
+        }
+        
+    }
+    
+    func closePopUpView(){
+
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .CurveEaseInOut, animations: {
+            self.popUpViewControllerInstance.view.frame = CGRectMake(0, self.theParentView.frame.height, self.theParentView.frame.width, self.theParentView.frame.height)
+        }) { _ in
+            self.popUpViewIsOpen = false
+            self.popUpViewControllerInstance.view.removeFromSuperview()
+        }
+    }
+    
+    //Close popUpView and remove it from Parent or superView
+    @IBAction func closePopUpDialog(sender: AnyObject) {
+        closePopUpView()
+    }
+    
 
 }
