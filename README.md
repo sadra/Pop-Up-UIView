@@ -9,5 +9,6 @@ Import the `popUpViewController.swift` from this repo into your project
 
 ## 3d
 Assign the popUpView to your popUpView Controller:
-- in the .xib file select the <b>File's Owner</b>
+- in the .xib file select the <b>File's Owner</b> (from righte side). then, in Custom Class of <I>Identity Inspector</I> tab, write popUpViewController.
+- then from Outlets in <I>Connection Inspector</I>, Connect `view` to UIView of your .xib file 
 
