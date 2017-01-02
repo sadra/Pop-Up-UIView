@@ -1,5 +1,5 @@
 # Pop-Up-UIView
-This is an example to a create Pop Up UIView (<b>Swift 2.3</b>)
+This is an example to create a Pop Up UIView (<b>Swift 2.3</b>)
 
 ![Alt text](/art-assets/popUpUIView.gif?raw=true "popUpUIView")
 
