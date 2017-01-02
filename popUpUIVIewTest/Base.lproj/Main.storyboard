@@ -13,13 +13,59 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpS-Ci-kBt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parent View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niR-B0-4Lf">
+                                        <rect key="frame" x="84" y="315" width="207" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="EIG-9I-an0"/>
+                                            <constraint firstAttribute="width" constant="207" id="eu4-36-Kz9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pL-IP-QdW">
+                                        <rect key="frame" x="124" y="361" width="126" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="126" id="Cpd-Dg-Kl7"/>
+                                            <constraint firstAttribute="height" constant="30" id="jYt-YC-sAD"/>
+                                        </constraints>
+                                        <state key="normal" title="Open popUpView">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openPopUpViewBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPh-HO-ZYd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2pL-IP-QdW" firstAttribute="top" secondItem="niR-B0-4Lf" secondAttribute="bottom" constant="8" id="BU1-n8-VNS"/>
+                                    <constraint firstItem="niR-B0-4Lf" firstAttribute="centerY" secondItem="mpS-Ci-kBt" secondAttribute="centerY" id="KCB-MN-oKq"/>
+                                    <constraint firstItem="niR-B0-4Lf" firstAttribute="centerX" secondItem="mpS-Ci-kBt" secondAttribute="centerX" id="fDL-Yc-vK7"/>
+                                    <constraint firstItem="2pL-IP-QdW" firstAttribute="centerX" secondItem="niR-B0-4Lf" secondAttribute="centerX" id="o9w-mR-xSO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mpS-Ci-kBt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0VQ-vH-nOr"/>
+                            <constraint firstAttribute="trailing" secondItem="mpS-Ci-kBt" secondAttribute="trailing" id="BGq-Pg-Uxn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mpS-Ci-kBt" secondAttribute="bottom" id="W7b-A0-dcp"/>
+                            <constraint firstItem="mpS-Ci-kBt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ySl-Oj-7y0"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.5" y="136.5"/>
         </scene>
     </scenes>
 </document>

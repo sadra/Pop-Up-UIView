@@ -58,6 +58,13 @@ class popUpViewController: UIViewController {
         
     }
     
+    //Create an Instance of popUpDialog and declare the parent and child
+    func crateInstanceOfPopUp(senderView:UIView, theViewController:UIViewController){
+        theParentView = senderView
+        popUpViewControllerInstance = self
+        theViewController.addChildViewController(popUpViewControllerInstance)
+    }
+    
     //Add popUP View ot parent view
     func addPopOverView() {
         
@@ -69,13 +76,6 @@ class popUpViewController: UIViewController {
         let height = theParentView.frame.height
         let width  = theParentView.frame.width
         self.popUpViewControllerInstance.view.frame = CGRectMake(0, self.theParentView.frame.maxY, width, height)
-    }
-    
-    //Create an Instance of popUpDialog and declare the parent and child
-    func crateInstanceOfPopUp(senderView:UIView, theViewController:UIViewController){
-        theParentView = senderView
-        popUpViewControllerInstance = self
-        theViewController.addChildViewController(popUpViewControllerInstance)
     }
     
     //Preapre the BackGroundView of the child View
