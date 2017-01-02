@@ -12,6 +12,8 @@
 		965731101E1A57AF00576A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9657310E1E1A57AF00576A95 /* Main.storyboard */; };
 		965731121E1A57AF00576A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965731111E1A57AF00576A95 /* Assets.xcassets */; };
 		965731151E1A57AF00576A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965731131E1A57AF00576A95 /* LaunchScreen.storyboard */; };
+		9657311E1E1A57DF00576A95 /* popUpUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9657311C1E1A57DF00576A95 /* popUpUIViewController.swift */; };
+		9657311F1E1A57DF00576A95 /* popUpUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9657311D1E1A57DF00576A95 /* popUpUIViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		965731111E1A57AF00576A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		965731141E1A57AF00576A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		965731161E1A57AF00576A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9657311C1E1A57DF00576A95 /* popUpUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popUpUIViewController.swift; sourceTree = "<group>"; };
+		9657311D1E1A57DF00576A95 /* popUpUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popUpUIViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				965731111E1A57AF00576A95 /* Assets.xcassets */,
 				965731131E1A57AF00576A95 /* LaunchScreen.storyboard */,
 				965731161E1A57AF00576A95 /* Info.plist */,
+				9657311C1E1A57DF00576A95 /* popUpUIViewController.swift */,
+				9657311D1E1A57DF00576A95 /* popUpUIViewController.xib */,
 			);
 			path = popUpUIVIewTest;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 				965731151E1A57AF00576A95 /* LaunchScreen.storyboard in Resources */,
 				965731121E1A57AF00576A95 /* Assets.xcassets in Resources */,
 				965731101E1A57AF00576A95 /* Main.storyboard in Resources */,
+				9657311F1E1A57DF00576A95 /* popUpUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +145,7 @@
 			files = (
 				9657310D1E1A57AF00576A95 /* ViewController.swift in Sources */,
 				9657310B1E1A57AF00576A95 /* AppDelegate.swift in Sources */,
+				9657311E1E1A57DF00576A95 /* popUpUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +261,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = popUpUIVIewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = isapanah.com.popUpUIVIewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -264,6 +273,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = popUpUIVIewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = isapanah.com.popUpUIVIewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
