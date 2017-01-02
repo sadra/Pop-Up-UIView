@@ -6,15 +6,68 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="popUpViewController" customModule="popUpUIVIewTest" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="closePopUpDialog" destination="97F-6M-Ze0" id="lV2-nb-KT4"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghC-JQ-abW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5v-0i-rP1">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKm-BB-cYC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                    <state key="normal" title="Close Dialog">
+                                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closePopUpDialog:" destination="-1" eventType="touchUpInside" id="8Rb-Xh-t7k"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.30910628569444448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="KXX-Ou-YrR"/>
+                                <constraint firstAttribute="trailing" secondItem="pKm-BB-cYC" secondAttribute="trailing" id="TFu-dF-rUT"/>
+                                <constraint firstItem="pKm-BB-cYC" firstAttribute="leading" secondItem="v5v-0i-rP1" secondAttribute="leading" id="WuC-Sp-jgw"/>
+                                <constraint firstItem="pKm-BB-cYC" firstAttribute="top" secondItem="v5v-0i-rP1" secondAttribute="top" id="fp9-L9-di2"/>
+                                <constraint firstAttribute="bottom" secondItem="pKm-BB-cYC" secondAttribute="bottom" id="vZs-Kc-COH"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="97F-6M-Ze0">
+                            <rect key="frame" x="8" y="36" width="359" height="156"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <color key="textColor" red="0.86506206890000004" green="0.86506206890000004" blue="0.86506206890000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="97F-6M-Ze0" firstAttribute="leading" secondItem="ghC-JQ-abW" secondAttribute="leading" constant="8" id="3pb-d4-ack"/>
+                        <constraint firstItem="97F-6M-Ze0" firstAttribute="top" secondItem="v5v-0i-rP1" secondAttribute="bottom" constant="6" id="AZl-1c-W05"/>
+                        <constraint firstAttribute="trailing" secondItem="v5v-0i-rP1" secondAttribute="trailing" id="DtX-ed-aOr"/>
+                        <constraint firstAttribute="bottom" secondItem="97F-6M-Ze0" secondAttribute="bottom" constant="8" id="Fax-JR-EcE"/>
+                        <constraint firstItem="v5v-0i-rP1" firstAttribute="top" secondItem="ghC-JQ-abW" secondAttribute="top" id="KxX-Fb-VnI"/>
+                        <constraint firstItem="v5v-0i-rP1" firstAttribute="leading" secondItem="ghC-JQ-abW" secondAttribute="leading" id="Prb-Ts-oaT"/>
+                        <constraint firstAttribute="trailing" secondItem="97F-6M-Ze0" secondAttribute="trailing" constant="8" id="us2-vo-vp1"/>
+                        <constraint firstAttribute="height" constant="200" id="vR9-xv-Igu"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ghC-JQ-abW" secondAttribute="trailing" id="HUn-pi-48f"/>
+                <constraint firstItem="ghC-JQ-abW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YWI-nH-5HD"/>
+                <constraint firstItem="ghC-JQ-abW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fZc-LW-bCF"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="566.5" y="506.5"/>
         </view>
     </objects>
 </document>
