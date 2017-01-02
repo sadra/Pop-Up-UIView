@@ -18,4 +18,11 @@ Now, you should make and instance of controller and handle the popUp after click
 ```swift
     let popUpController = popUpViewController()
 ```
-
+- Then in delcare the Instance in <b>viewDidLoad</b>:
+```swift
+    popUpController.crateInstanceOfPopUp(self.view, theViewController: self, sizeOfPopUpViewContainer: SIZE_OF_POPUPVIEW_CONTAINER)
+```
+- and for the last step, call the `openPopUpView` every where you want to do that (like after a button click):
+```swift
+    popUpController.openPopUpView()
+```
