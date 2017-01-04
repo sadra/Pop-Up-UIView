@@ -44,15 +44,15 @@ When you're making an instance of popUpUIView you can define two additional attr
 - `needMoreGesture` : by default this attribute is `false`. means, there is no <b>More Section</b>. if you want <I>more section</I> you should set this attribiute to `true`. Then you can add more UI Elemnt in your UIView 'under the main popUpView.
 
 ```swift
-    popUpController.crateInstanceOfPopUp(self.view, theViewController: self, sizeOfPopUpViewContainer: 200, needMoreGesture: true)
+popUpController.crateInstanceOfPopUp(self.view, theViewController: self, sizeOfPopUpViewContainer: 200, needMoreGesture: true)
 ```
 
 - `backgroundColor` : by default this attrbiute is `DarkGray`. If you want change the background color just set your favorite color az an attribute.
 
 ```swift
-    popUpController.crateInstanceOfPopUp(self.view, theViewController: self, sizeOfPopUpViewContainer: 200, backgroundColor: UIColor.redColor())
+popUpController.crateInstanceOfPopUp(self.view, theViewController: self, sizeOfPopUpViewContainer: 200, backgroundColor: UIColor.redColor())
 ```
 - As you know you can set all attribiutes once at all :D :
 ```swift
-    popUpController.crateInstanceOfPopUp(self.view, theViewController: self, sizeOfPopUpViewContainer: 200, needMoreGesture: true, backgroundColor: UIColor.redColor())
+popUpController.crateInstanceOfPopUp(self.view, theViewController: self, sizeOfPopUpViewContainer: 200, needMoreGesture: true, backgroundColor: UIColor.redColor())
 ```
