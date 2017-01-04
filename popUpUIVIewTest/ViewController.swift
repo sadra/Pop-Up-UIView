@@ -16,19 +16,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        popUpController.crateInstanceOfPopUp(self.view, theViewController: self, sizeOfPopUpViewContainer: 200)
+        //Define popUp attribiutes
+        popUpController.crateInstanceOfPopUp(self.view, theViewController: self, sizeOfPopUpViewContainer: 200, needMoreGesture: false, backgroundColor: UIColor.redColor())
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func openPopUpViewBtn(sender: AnyObject) {
         
+        //Call and open PopUpView
         popUpController.openPopUpView()
         
     }
