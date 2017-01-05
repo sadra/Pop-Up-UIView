@@ -1,10 +1,8 @@
-<p>&nbsp;</p>
 
-[![Version](https://img.shields.io/cocoapods/v/PopupDialog.svg?style=flat)](https://github.com/amlashi-sadra/Pop-Up-UIView/)
-[![License](https://img.shields.io/cocoapods/l/PopupDialog.svg?style=flat)](https://github.com/amlashi-sadra/Pop-Up-UIView)
-[![Platform](https://img.shields.io/cocoapods/p/PopupDialog.svg?style=flat)](https://github.com/amlashi-sadra/Pop-Up-UIView)
-
-<p>&nbsp;</p>
+[![Version](https://img.shields.io/badge/version-1.0-red.svg?style=flat)](https://github.com/amlashi-sadra/Pop-Up-UIView/)
+[![License](https://img.shields.io/badge/licence-MIT-lightgrey.svg?style=flat)](https://github.com/amlashi-sadra/Pop-Up-UIView)
+[![Platform](https://img.shields.io/badge/platform-iOS-brightgreen.svg?style=flat)](https://github.com/amlashi-sadra/Pop-Up-UIView)
+[![Swift](https://img.shields.io/badge/swift-2.3-green.svg?style=flat)](https://github.com/amlashi-sadra/Pop-Up-UIView)
 
 # Pop-Up-UIView
 This is an example to create a Pop Up UIView (<b>Swift 2.3</b>)
