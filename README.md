@@ -1,3 +1,11 @@
+<p>&nbsp;</p>
+
+[![Version](https://img.shields.io/cocoapods/v/PopupDialog.svg?style=flat)](https://github.com/amlashi-sadra/Pop-Up-UIView/)
+[![License](https://img.shields.io/cocoapods/l/PopupDialog.svg?style=flat)](https://github.com/amlashi-sadra/Pop-Up-UIView)
+[![Platform](https://img.shields.io/cocoapods/p/PopupDialog.svg?style=flat)](https://github.com/amlashi-sadra/Pop-Up-UIView)
+
+<p>&nbsp;</p>
+
 # Pop-Up-UIView
 This is an example to create a Pop Up UIView (<b>Swift 2.3</b>)
 
